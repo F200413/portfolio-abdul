@@ -1,46 +1,41 @@
-# 🚀 3D Animated Portfolio - Frontend Showcase
+# 3D Fullstack Developer Portfolio
 
-A visually immersive and interactive **personal portfolio website frontend**, designed to showcase projects and skills through a dynamic 3D experience. This project leverages advanced animation libraries to create an engaging user journey.
-
----
-
-## 🔗 Links
-- 🌐 **Live Demo:** [your-live-demo-url.com](https://yash-chauhan.vercel.app)]
-- 👨‍💻 **Author's Portfolio:** [yash-chauhan.vercel.app](https://yash-chauhan.vercel.app )
+An immersive, animated personal portfolio for **Abubakar — Fullstack Developer**. The 3D scene, scroll-driven storytelling and selected work showcase production projects shipped for Red Bull, OnlineCook, Rehousing, SecureUS and LaunchEmpire.
 
 ---
 
-## ⚙️ Core Technologies & Libraries
-- **HTML5**
-- **CSS3**
-- **JavaScript (ES6+)**
-- **GSAP (GreenSock Animation Platform):** The core engine for all high-performance animations.
-- **ScrollTrigger:** A GSAP plugin used to create scroll-based animations and interactions.
-- **Three.js / Spline / or other 3D library:** The library used to render and manipulate the 3D models.
+## Selected Work
+- **Red Bull Sales Drivers** — micro-frontend sales-enablement platform (React · MobX · Vite)
+- **OnlineCook** — recipe platform monorepo (Next.js · NestJS · Prisma · Prefect)
+- **Rehousing** — Toronto real-estate platform (React · NestJS · Prisma · Elasticsearch)
+- **SecureUS** — security mobile + API monorepo (React Native · Expo · NestJS · Turbo)
+- **LaunchEmpire** — multi-product SaaS suite (Next.js 14 · NestJS · Prisma · Tailwind)
 
 ---
 
-## ✨ Key Features
-- 🎞️ **Scroll-Based 3D Animations:** As the user scrolls, 3D models and scenes animate, creating a cinematic storytelling experience.
-- 🎭 **Complex Animation Timelines:** Utilizes GSAP to orchestrate intricate sequences and interactions with precision.
-- 📱 **Responsive & Performant:** Carefully optimized to ensure smooth animations and a consistent experience across various devices and screen sizes.
-- 🎨 **Modern UI/UX:** A clean and intuitive interface that complements the sophisticated 3D visuals.
+## Core Technologies
+- HTML5 / CSS3 / JavaScript (ES6+)
+- Three.js for the 3D scene
+- GSAP + ScrollTrigger for animation timelines
+- Vite for the build
 
 ---
 
-## 🎯 Project Goal
-The primary goal of this project was to master and implement advanced frontend animation techniques using **GSAP and ScrollTrigger**. It serves as a powerful demonstration of how to integrate complex 3D elements and scroll-based storytelling into a modern web experience.
+## Theme
+- Primary: `#6366F1` (indigo)
+- Hover: `#818CF8`
+- Dark text: `#0F172A`
+- Background: `#F1F5FF`
+- Accent (skills/UI): `#38BDF8` / `#0EA5E9`
+- Subtle: `#64748B`
 
 ---
 
-## ⚠️ Asset Disclaimer
-Please note that the 3D models used in this project were **purchased from a third-party marketplace**. The focus of this work was on the frontend development, animation, and integration of these assets, not on 3D modeling itself.
+## Asset Disclaimer
+The 3D models used in this project were purchased from a third-party marketplace. The focus of this work is on the frontend, animation and product showcase — not 3D modelling.
 
 ---
 
-## 👨‍💻 Author
-**Yash Chauhan**
-- GitHub: [@yashchauhan008](https://github.com/Yashchauhan008 )
-- LinkedIn: [yashchauhan](https://www.linkedin.com/in/yashchauhan008 )
-
----
+## Author
+**Abubakar** — Fullstack Developer
+- Email: development@devminified.com

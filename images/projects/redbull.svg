@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 668 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="rb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="rb-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DC2626"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="rb-glow" cx="0.7" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#DC2626" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="668" height="600" fill="url(#rb-bg)"/>
+  <rect width="668" height="600" fill="url(#rb-glow)"/>
+  <g opacity="0.08" stroke="#FFFFFF" stroke-width="1" fill="none">
+    <path d="M0 120 H668 M0 240 H668 M0 360 H668 M0 480 H668"/>
+    <path d="M120 0 V600 M260 0 V600 M400 0 V600 M540 0 V600"/>
+  </g>
+  <g transform="translate(60 220)" font-family="Poppins, system-ui, sans-serif" fill="#F8FAFC">
+    <text font-size="22" letter-spacing="6" fill="#A78BFA" font-weight="500">ENTERPRISE • MFE</text>
+    <text y="80" font-size="76" font-weight="700">Red Bull</text>
+    <text y="148" font-size="48" font-weight="600" fill="url(#rb-accent)">Sales Drivers</text>
+    <text y="220" font-size="22" fill="#94A3B8" font-weight="500">React • MobX • Vite • Micro-Frontends</text>
+  </g>
+  <circle cx="568" cy="92" r="48" fill="#DC2626"/>
+  <circle cx="600" cy="92" r="48" fill="#F59E0B" opacity="0.85"/>
+</svg>

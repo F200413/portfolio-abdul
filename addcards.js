@@ -1,70 +1,51 @@
 const oM = [
     {
       id: 0,
-      name: "Project Hub",
-      description: "Coffee Shop Website",
-      image: "images/projects/projecthub.png",
-      tags: ["javascript", "html", "css", "ui"],
-      liveview: "https://projecthubb.vercel.app/",
-      alt: "Coffee Shop Website",
+      name: "Red Bull Sales Drivers",
+      description: "Micro-frontend sales-enablement platform for Red Bull North America. Built reusable React/MobX modules consumed across the RBNA web suite with strict performance and a11y budgets.",
+      image: "images/projects/redbull.svg",
+      tags: ["react", "typescript", "mobx", "vite", "enterprise"],
+      liveview: "https://www.redbull.com/",
+      alt: "Red Bull Sales Drivers Web App",
     },
     {
       id: 1,
-      name: "krushigram",
-      description:
-        "Krushigram is an e-commerce platform for farmers, developed during a hackathon at DA-IICT.It aims to empower farmers through fair trade.",
-      image: "images/projects/krushigram.png",
-      tags: ["javascript", "html", "css", "ui"],
-      liveview: "https://krushigram.vercel.app/",
-      alt: "Coffee Shop Website",
+      name: "OnlineCook",
+      description: "Recipe-centric food platform — Next.js storefront, NestJS API, Prisma + Postgres, plus a Python/Prefect recipe-import pipeline. Ships as a Yarn 2 monorepo with Docker-based dev.",
+      image: "images/projects/onlinecook.svg",
+      tags: ["nextjs", "nestjs", "typescript", "prisma", "docker"],
+      liveview: "https://onlinecook.com/",
+      alt: "OnlineCook Recipe Platform",
     },
     {
       id: 2,
-      name: "Study Buddy",
-      description: "LMS for teaching assistant",
-      image: "images/projects/studybuddy.jpeg",
-      tags: ["javascript", "react", "mongodb", "express"],
-      liveview: "https://studybuddyy.vercel.app/",
-      alt: "Digital Marketing Agency",
+      name: "Rehousing",
+      description: "End-to-end real-estate platform for the Toronto market. NestJS API with Prisma, Redis & Elasticsearch, paired with a typed React/Vite admin and tenant portal generated from OpenAPI.",
+      image: "images/projects/rehousing.svg",
+      tags: ["react", "nestjs", "typescript", "prisma", "elasticsearch"],
+      liveview: "https://rehousing.ca/",
+      alt: "Rehousing Real Estate Platform",
     },
     {
       id: 3,
-      name: "Open Talk",
-      description: "Affiliate Marketing and earning Website",
-      image: "images/projects/opentalk.jpeg",
-      tags: ["react", "mongodb", "express"],
-      liveview: "https://opentalk1.netlify.app/",
-      alt: "Affiliate Marketing and earning Website",
+      name: "SecureUS",
+      description: "Cross-platform security suite — React Native + Expo mobile app and NestJS backend in a Turbo-powered monorepo. Designed for offline-first field workflows with end-to-end TypeScript.",
+      image: "images/projects/secureus.svg",
+      tags: ["reactnative", "expo", "nestjs", "typescript", "turbo"],
+      liveview: "https://secureus.app/",
+      alt: "SecureUS Security Mobile App",
     },
     {
       id: 4,
-      name: "Randomizer",
-      description: "Fitness Institute",
-      image: "images/projects/randomizer.jpg",
-      tags: ["html", "css", "javascript", "react", "game"],
-      liveview: "https://randomizerr.vercel.app/",
-      alt: "Fitness Institute",
-    },
-    {
-      id: 5,
-      name: "Crypto Tracker",
-      description: "A cryptocurrency tracking dashboard",
-      image: "images/projects/cryptotracker.png",
-      tags: ["react", "javascript", "api"],
-      liveview: "https://cryptotrackerr.vercel.app/",
-      alt: "Crypto Tracker Dashboard",
-    },
-    {
-      id: 6,
-      name: "Weather App",
-      description: "Real-time weather application",
-      image: "images/projects/weatherapp.png",
-      tags: ["javascript", "html", "css", "api"],
-      liveview: "https://weatherappp.vercel.app/",
-      alt: "Real-time Weather Application",
+      name: "LaunchEmpire",
+      description: "Multi-product SaaS suite (Vaultpilot · Recruitpilot · SmartTax) built on a Next.js 14 + NestJS + Prisma stack. One shared API powers three branded Next.js apps inside a Yarn-Berry monorepo.",
+      image: "images/projects/launchempire.svg",
+      tags: ["nextjs", "nestjs", "typescript", "prisma", "tailwind"],
+      liveview: "https://launchempire.io/",
+      alt: "LaunchEmpire SaaS Suite",
     },
   ];
-  
+
   class lM {
     constructor() {
       he(this, "domElements", {
@@ -76,7 +57,7 @@ const oM = [
         (this.tags = aM),
         this.renderItems();
     }
-  
+
     renderItems() {
       this.items.forEach((e) => {
         this.domElements.renderContainer.insertAdjacentHTML(
@@ -103,7 +84,7 @@ const oM = [
           this.addEventListenersToCard(e);
       });
     }
-  
+
     renderBanner(e) {
       let t = "";
       return (
@@ -119,9 +100,8 @@ const oM = [
         t
       );
     }
-  
+
     renderButtons(e) {
-      // Only the Live View button will be rendered if available
       let t = "";
       if (e.liveview) {
         t = `
@@ -136,13 +116,13 @@ const oM = [
       }
       return t;
     }
-  
+
     renderTags(e) {
       let t = "";
       for (let n = 0; n < e.length; n++) t += this.tags[e[n]];
       return t;
     }
-  
+
     addEventListenersToCard(e) {
       const t = document.getElementById("work-item-" + e.id);
       t.addEventListener("click", () => {
@@ -154,7 +134,7 @@ const oM = [
           this.experience.ui.work.cards.updatePositions(),
           this.sounds.play("buttonClick"));
       });
-  
+
       if (e.liveview) {
         document
           .getElementById("work-item-orange-button-" + e.id)
@@ -164,4 +144,3 @@ const oM = [
       }
     }
   }
-  

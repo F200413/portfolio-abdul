@@ -2,617 +2,529 @@
 <html lang="en">
 
 <head>
-    <title>Yash | Creative Developer</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Portfolio of Yash Chauhan - Creative developer living in India - Focused on React native and ReactJS">
-    <meta name="keywords" content="webgl, threejs, portfolio, reactjs, react, frontend developer, front-end, programming, web developer, web, developer, 3d website, 3d, blender, India, Portfolio of Yash Chauhan - Creative developer living in India - Focused on React native and ReactJS">
-    <meta property="og:site_name" content="Yash Chauhan Portfolio">
-    <meta property="og:title" content="Yash Chauhan - Creative Developer">
-    <meta property="og:description" content="Portfolio of Yash Chauhan - Creative developer living in India - Focused on React native and ReactJS">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://david-hckh.com/">
-    <meta property="og:image" content="https://david-hckh.com/thumbnail.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="627">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="David Heckhoff">
-    <meta name="twitter:creator" content="@DavidHckh">
-    <meta name="twitter:title" content="David Heckhoff - Creative Developer">
-    <meta name="twitter:description" content="Portfolio of Yash Chauhan - Creative developer living in India - Focused on React native and ReactJS">
-    <meta name="twitter:image" content="https://david-hckh.com/thumbnail.png">
-    <meta name="theme-color" content="#EFE7DC">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="David Heckhoff Portfolio">
-    <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
-    <link rel="mask-icon" href="/head/logo.svg" color="#091434">
-    <link rel="icon" type="image/png" href="/head/favion-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/head/favion-16x16.png" sizes="16x16">
-    <link rel="apple-touch-icon" sizes="120x120" href="/head/apple-120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/head/apple-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/head/apple-180.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/head/apple-192.png">
-    <meta name="msapplication-config" content="/head/browserconfig.xml">
-    <meta name="msapplication-TileColor" content="#FF923E">
-    <meta name="msapplication-square70x70logo" content="/head/mstile-70.png">
-    <meta name="msapplication-square150x150logo" content="/head/mstile-150.png">
-    <meta name="msapplication-wide310x150logo" content="/head/mstile-310x150.png">
-    <meta name="msapplication-square310x310logo" content="/head/mstile-310.png">
-    <link rel="manifest" href="/head/manifest.webmanifest">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="/head/favicon.ico">
-    <script type="module" crossorigin src="/index.js"></script>
+
+    <title>Abdullah — Fullstack Developer & DevOps Engineer</title>
+    <meta name="description" content="Abdullah — Fullstack Developer & DevOps Engineer. Shipping production web & mobile products for Red Bull, OnlineCook and Rehousing. Linux server patching, ELK, CloudBolt, Foreman, vSphere & AWS infrastructure work.">
+    <meta name="keywords" content="abdullah, fullstack developer, devops engineer, react, nextjs, nestjs, typescript, react native, linux server patching, elk stack, cloudbolt, foreman, vsphere, aws, infrastructure, sre">
+    <meta name="theme-color" content="#0A0F1F">
+    <meta property="og:title" content="Abdullah — Fullstack Developer & DevOps Engineer">
+    <meta property="og:description" content="Shipping production systems for Red Bull, OnlineCook and Rehousing. Fullstack + Infrastructure.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devminified.com/">
+
+    <link rel="icon" type="image/png" href="/head/favion-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/head/favion-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="/head/apple-180.png">
+
     <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script defer src="/index.js"></script>
 </head>
 
-<style>
-.social-icon {
-    font-size: 28px;
-    color: #091434;
-    transition: color 0.3s ease;
-}
+<body class="theme-light">
+    <!-- Scroll progress -->
+    <div id="scroll-progress" aria-hidden="true"></div>
 
-.social-icon:hover {
-    color: #B9BBBE;
-}
-</style>
+    <!-- Background grid + glow -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-3" aria-hidden="true"></div>
 
-<body>
-    <!--Canvas-->
-    <canvas id="main-canvas"></canvas>
+    <!-- Header -->
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="brand">
+                <span class="brand-bracket">&lt;/&gt;</span>
+                <span class="brand-name">abdullah</span><span class="brand-dot">.</span><span class="brand-tld">dev</span>
+            </a>
 
-    <!--Intro-->
-    <div id="intro-container" class="center column">
-        <svg id="intro-svg" viewBox="0 0 56 61" xmlns="http://www.w3.org/2000/svg" height="120" width="120">
-            <mask id="intro-mask">
-                <rect fill="black" height="61" width="61"></rect>
-                <rect fill="white" height="61" width="61" id="loading-rect"></rect>
-            </mask>
-            <use href="#logo-path" fill="#091434" opacity=".1">
-            </use>
-            <use href="#logo-path" fill="#091434" mask="url(#intro-mask)"></use>
-        </svg>
-    </div>
+            <nav class="nav" aria-label="Primary">
+                <a href="#work">Work</a>
+                <a href="#stack">Stack</a>
+                <a href="#infra">Infrastructure</a>
+                <a href="#activity">Activity</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="nav-cta">Hire me <i class="fa-solid fa-arrow-right"></i></a>
+            </nav>
 
-    <!--Loading Container-->
-    <div id="transition-container" class="hide">
-        <!--Top Wave-->
-        <svg id="transition-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <defs>
-                <path fill="#FF923E" id="transition-wave-path"
-                    d="M0,128L21.8,138.7C43.6,149,87,171,131,154.7C174.5,139,218,85,262,69.3C305.5,53,349,75,393,101.3C436.4,128,480,160,524,186.7C567.3,213,611,235,655,213.3C698.2,192,742,128,785,122.7C829.1,117,873,171,916,186.7C960,203,1004,181,1047,160C1090.9,139,1135,117,1178,96C1221.8,75,1265,53,1309,53.3C1352.7,53,1396,75,1418,85.3L1440,96L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
-                </path>
-            </defs>
-            <use href="#transition-wave-path"></use>
-        </svg>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-sun theme-icon-sun"></i>
+                <i class="fa-solid fa-moon theme-icon-moon"></i>
+            </button>
 
-        <!--Center Fill-->
-        <div id="transition-push"></div>
-
-        <!--Bottom Wave-->
-        <svg id="transition-wave-svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <use href="#transition-wave-path"></use>
-        </svg>
-    </div>
-
-    <!--Overlay Container-->
-    <div id="overlay-container" class="content-width">
-        <header id="header-container">
-            <!--Logo-->
-            <svg id="header-logo-svg" viewBox="0 0 56 61" xmlns="http://www.w3.org/2000/svg" height="60" width="56">
-                <defs>
-                    <path id="logo-path"
-                        d="M3 14 24 2C28 0 28 0 32 2L53 14C56 16 56 17 56 19L56 43C56 46 55 47 51 49L32 59C28 61 28 61 24 59L5 49C1 47 0 46 0 43L0 19C0 17 0 16 3 14M28 4 5 17 28 28 51 17 28 4M53 20 30 31 30 56 53 44 53 20M40 42 33 35C33 35 32 34 33 33 34 32 35 33 36 34L36 34 43 41C44 42 44 42 43 43L35 51C35 51 34 52 33 51 32 50 33 49 33 49L40 42M16 42 23 35C23 35 24 34 23 33 22 32 21 33 20 34L13 41C12 42 12 42 13 43L21 51C21 51 22 52 23 51 24 50 23 49 23 49L16 42">
-                    </path>
-
-                    <clipPath id="logo-clip-path">
-                        <use fill="white" href="#logo-path" transform="scale(0.87)"></use>
-                    </clipPath>
-                </defs>
-            </svg>
-
-            <div id="logo-dark-background">
-                <div id="logo-white-background"></div>
-            </div>
-
-            <div id="logo-click-container"></div>
-
-            <!--Sound Button-->
-            <div id="sound-button-scale-container">
-                <div id="sound-button" class="center overlay-button">
-                    <svg id="header-sound-svg" viewBox="0 0 18 9" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="white">
-                            <path id="sound-body-path"
-                                d="M 0 4 C 0 4 0 3 1 3 L 2 3 L 3 2 C 5 0 5 1 5 2 L 5 7 C 5 8 5 9 3 7 L 2 6 L 1 6 C 0 6 0 5 0 5 L 0 4">
-                            </path>
-                            <path id="sound-volume-0-path"
-                                d="M 7 4 C 8 4 8 5 7 5 C 6 5 6 6 7 6 C 9 6 9 3 7 3 C 6 3 6 4 7 4">
-                            </path>
-                            <path id="sound-volume-1-path"
-                                d="M 7 2 C 10 2 10 7 7 7 C 6 7 6 8 7 8 C 11 8 11 1 7 1 C 6 1 6 2 7 2">
-                            </path>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-
-            <!--Menu Button-->
-            <div id="menu-button-scale-container">
-                <div id="menu-button" class="center column overlay-button orange-hover">
-                    <div id="menu-button-bar-0" class="menu-button-bar"></div>
-                    <div id="menu-button-bar-1" class="menu-button-bar"></div>
-                    <div id="menu-button-bar-2" class="menu-button-bar"></div>
-                </div>
-            </div>
-        </header>
-
-        <!--Scroll CTA-->
-        <!--Landing-->
-        <div class="scroll-container">
-            <div class="scroll-border-container">
-                <div class="scroll-wheel"></div>
-            </div>
-            <img class="scroll-touch-icon hide" src="/touch-icon.png" alt="scroll mouse icon wheel" />
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+    </header>
 
-        <!--Scroll-->
-        <div class="scroll-container" style="opacity: 0">
-            <div class="scroll-border-container" style="border-color: rgb(255, 255, 255); ">
-                <div class="scroll-wheel" style="background: rgb(255, 255, 255);"></div>
-            </div>
-            <img class="scroll-touch-icon hide" src="/touch-icon.png" style="filter: brightness(100)" alt="scroll mouse icon wheel" />
-        </div>
-    </div>
+    <main>
+        <!-- ============= HERO ============= -->
+        <section id="hero" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-left reveal">
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        <span>Available for new projects</span>
+                    </div>
 
-    <!--Menu-->
-    <div id="menu-container" class="column">
-        <div id="menu-content-container" class="column">
-            <!--Menu Items-->
-            <div id="menu-items-container">
-                <div class="column menu-items-column-container">
-                    <span class="menu-item active-menu-item">Home</span>
-                    <span class="menu-item">About</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Abdullah</span>.
+                        <br>
+                        I build &amp; run<br>
+                        <span class="rotator" aria-live="polite">
+                            <span class="rotator-word">web products</span>
+                            <span class="rotator-word">mobile apps</span>
+                            <span class="rotator-word">infrastructure</span>
+                            <span class="rotator-word">DevOps</span>
+                            <span class="rotator-word">n8n Automation</span>
+                            <span class="rotator-word">AI Integration</span>
+                            <span class="rotator-word">Respond.IO</span>
+                        </span>
+                    </h1>
+
+                    <p class="hero-sub">
+                        Fullstack developer &amp; DevOps engineer. Shipping production systems
+                        for <span class="hl">Red Bull</span>, <span class="hl">OnlineCook</span>
+                        and <span class="hl">Rehousing</span> — from React + NestJS code to
+                        Linux fleets, ELK and AWS.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#work" class="btn btn-primary">
+                            View selected work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <i class="fa-solid fa-paper-plane"></i> Get in touch
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <strong data-count="5" data-suffix="+">5+</strong>
+                            <span>Years shipping</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <strong data-count="20" data-suffix="+">20+</strong>
+                            <span>Production systems</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <strong data-count="3">3</strong>
+                            <span>Continents covered</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="column menu-items-column-container">
-                    <span class="menu-item">Work</span>
-                    <span class="menu-item">Contact</span>
+
+                <div class="hero-right reveal">
+                    <!-- Floating live terminal card -->
+                    <div class="term-card" aria-hidden="true">
+                        <div class="term-head">
+                            <span class="term-dot red"></span>
+                            <span class="term-dot yellow"></span>
+                            <span class="term-dot green"></span>
+                            <span class="term-title">abdullah@prod-jump:~$ live-ops</span>
+                            <span class="term-live"><span class="term-live-dot"></span>LIVE</span>
+                        </div>
+                        <div class="term-statbar">
+                            <span class="stat-pill"><i class="fa-brands fa-linux"></i> <strong data-stat="hosts">142</strong> hosts</span>
+                            <span class="stat-pill"><i class="fa-brands fa-aws"></i> <strong data-stat="agents">64</strong> agents</span>
+                            <span class="stat-pill"><i class="fa-solid fa-server"></i> <strong data-stat="vms">38</strong> VMs</span>
+                            <span class="stat-pill ok"><strong data-stat="uptime">99.9</strong>%</span>
+                        </div>
+                        <div class="term-body" id="term-body" aria-live="polite"></div>
+                    </div>
+
+                    <!-- Floating tech badges -->
+                    <div class="float-badge fb-1"><i class="fa-brands fa-react"></i> React</div>
+                    <div class="float-badge fb-2"><i class="fa-brands fa-aws"></i> AWS</div>
+                    <div class="float-badge fb-3"><i class="fa-brands fa-linux"></i> Linux</div>
+                    <div class="float-badge fb-4"><i class="fa-brands fa-docker"></i> Docker</div>
                 </div>
             </div>
-            <!--Menu Social Link-->
-            <div id="menu-social-container" class="row">
-                <!-- <a tabindex="-1" target="_blank" href="https://discord.gg/P9QvEeAm"><img class="social-icon"
-                        src="./images/discord.png" alt="discord Menu Icon" height="28" width="28"></img></a> -->
-                <a tabindex="-1" target="_blank" href="https://github.com/yashchauhan008">
-                    <i class="fab fa-github social-icon"></i>
-                </a>
-                
-                <a tabindex="-1" href="mailto:yashchauhan1775@gmail.com">
-                    <i class="fas fa-envelope social-icon"></i>
-                </a>
-                
-                <a tabindex="-1" target="_blank" href="https://www.instagram.com/yash_chauhan________">
-                    <i class="fab fa-instagram social-icon"></i>
-                </a>
-                
-                <a tabindex="-1" target="_blank" href="https://www.linkedin.com/in/yash-chauhan-842162321">
-                    <i class="fab fa-linkedin social-icon"></i>
-                </a>
-            </div>
-            <hr>
-            <!--Music Credits-->
-            <div id="music-credit-container" class="row">
-                <span>
-                   
-                </span>
-            </div>
-        </div>
-    </div>
-
-    <!--Hover Icon-->
-    <div id="hover-icon">
-        <svg id="hover-content" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" height="30" width="30" fill="white">
-            <path id="arrow-path"
-                d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
-        </svg>
-        <div class="hover-spread"></div>
-        <div class="hover-spread"></div>
-    </div>
-
-    <!--Landing Page-->
-    <div id="landing-page" class="content-container landing-slow-transition">
-
-        <section id="landing-page-section" class="content-width slide-out-left-transition">
-            <svg id="landing-content-svg" viewBox="0 0 500 310" xmlns="http://www.w3.org/2000/svg">
-                <text class="landing-headline" y="60" x="5">Hi, my</text>
-                <text class="landing-headline" y="135" x="5">name is Yash.</text>
-                <text class="landing-subheading" x="10" y="185">
-                    I love creating beautiful user experiences.
-                </text>
-
-                <foreignObject x="8" y="250" height="100" width="300" requiredExtensions="http://www.w3.org/1999/xhtml">
-                    <div id="landing-cta-button" class="big-button orange-hover">Get in touch</div>
-                </foreignObject>
-            </svg>
         </section>
-    </div>
 
-    <!--Scroll Container-->
-    <div id="scroll-container" class="center column">
+        <!-- ============= MARQUEE ============= -->
+        <section class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Red Bull</span><i class="dot">✦</i>
+                <span>OnlineCook</span><i class="dot">✦</i>
+                <span>Rehousing</span><i class="dot">✦</i>
+                <span class="accent">Available for new projects</span><i class="dot">✦</i>
+                <span>TypeScript</span><i class="dot">✦</i>
+                <span>React · Next.js</span><i class="dot">✦</i>
+                <span>NestJS · Prisma</span><i class="dot">✦</i>
+                <span>Linux · vSphere</span><i class="dot">✦</i>
+                <span>ELK · CloudBolt</span><i class="dot">✦</i>
+                <span>Foreman · AWS</span><i class="dot">✦</i>
+                <span class="accent">Let's build something great</span><i class="dot">✦</i>
 
-        <!--About Container-->
-        <section id="about-section" class="content-width">
-            <div id="about-content-container">
-                <!--Header Container SVG-->
-                <svg id="skills-svg" viewBox="-2 -2 506 815" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid">
+                <span>Red Bull</span><i class="dot">✦</i>
+                <span>OnlineCook</span><i class="dot">✦</i>
+                <span>Rehousing</span><i class="dot">✦</i>
+                <span class="accent">Available for new projects</span><i class="dot">✦</i>
+                <span>TypeScript</span><i class="dot">✦</i>
+                <span>React · Next.js</span><i class="dot">✦</i>
+                <span>NestJS · Prisma</span><i class="dot">✦</i>
+                <span>Linux · vSphere</span><i class="dot">✦</i>
+                <span>ELK · CloudBolt</span><i class="dot">✦</i>
+                <span>Foreman · AWS</span><i class="dot">✦</i>
+                <span class="accent">Let's build something great</span><i class="dot">✦</i>
+            </div>
+        </section>
 
-                    <!--Defs-->
-                    <defs>
-                        <!--Profile picture aniamtion line gradient-->
-                        <linearGradient id="about-profile-picture-mask-gradient" gradientTransform="rotate(90)">
-                            <stop offset="5%" stop-color="#60CAFF" />
-                            <stop offset="100%" stop-color="rgba(0, 0, 0, 0)" />
-                        </linearGradient>
+        <!-- ============= WORK ============= -->
+        <section id="work" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow"><span class="eyebrow-bar"></span> Selected work</span>
+                    <h2 class="section-title">Production systems<br>I've shipped</h2>
+                    <p class="section-lead">
+                        Three live products from the last few years — a global enterprise micro-frontend, a recipe-platform monorepo and a real-estate SaaS. Each ships to real users every day.
+                    </p>
+                </div>
 
-                        <!--Background Gradient-->
-                        <linearGradient id="about-background-gradient" gradientTransform="rotate(90)">
-                            <stop offset="30%" stop-color="rgba(0, 88, 165, .15)" />
-                            <stop offset="95%" stop-color="rgba(0, 132, 255, .3)" />
-                        </linearGradient>
-
-                        <!--Icon Template-->
-                        <polyline id="about-icon-background" fill="#00b7ff18"
-                            points="0,10 10,0 65,0 75,10 75,65 65,75 10,75 0,65" />
-                    </defs>
-
-                    <!--Header-->
-                    <g id="about-svg-header">
-                        <!--Profile Picture Baczkground-->
-                        <polyline id="about-profile-background" class="about-box-background"
-                            points="65,170 145,170 145,50 135,40 135,10 125,0 70,0 10,0 0,10 0,160 10,170" />
-
-
-                        <!--Header Content Background-->
-                        <polyline id="about-header-background" class="about-box-background"
-                            points="145,85 250,85 260,95 490,95 500,105 500,135 500,150 490,160 200,160 190,170 145,170" />
-
-                        <!--Profile Picture Mask-->
-                        <mask id="about-profil-picture-mask">
-                            <!--Black Background-->
-                            <rect fill="black" x="0" y="0" width="145" height="170" />
-                            <!--White Background-->
-                            <polyline fill="white"
-                                points="65,170 145,170 145,50 135,40 135,10 125,0 70,0 10,0 0,10 0,160 10,170">
-                            </polyline>
-                            <!--Rect to make white background visible-->
-                            <rect id="about-profile-picture-mask-rect" fill="black" width="145" height="170"
-                                style="transition: 1.2s" x="0" y="-0" />
-                        </mask>
-
-                        <!--Profile Picture-->
-                        <image href="/skills-profile-picture.png" opacity="1" height="170" width="145"
-                            x="2" mask="url(#about-profil-picture-mask)" image-rendering="optimizeSpeed" />
-
-                        <!--Profile Picture line that moves up on animation-->
-                        <g mask="url(#about-profil-picture-mask)">
-                            <rect fill="url(#about-profile-picture-mask-gradient)" height="35" width="155" y="170"
-                                id="about-profile-picture-gradient" style="transition: 1.2s"></rect>
-                        </g>
-
-                        <!--Profile Picture Borders-->
-                        <polyline class="about-box-line" points="65,170 10,170 0,160 0,10 10,0 70,0" />
-                        <polyline class="about-box-line" points="65,170 145,170 145,50 135,40 135,10 125,0 70,0" />
-
-                        <!--Header Content Borders-->
-                        <polyline class="about-box-line" points="145,85 250,85 260,95 490,95 500,105 500,135" />
-                        <polyline class="about-box-line" points="145,170 190,170 200,160 490,160 500,150 500,135" />
-
-                        <!--Header Content-->
-                        <g transform="translate(170 118)" fill="#34bfff" font-weight="bold">
-                            <text x="0" y="0" font-size="12" class="about-header-upper-text">Name :</text>
-                            <text x="0" y="20" font-size="18" class="about-header-lower-text">Yash</text>
-                            <text x="110" y="0" font-size="12" class="about-header-upper-text">Age :</text>
-                            <text x="110" y="20" font-size="18" class="about-header-lower-text">20</text>
-                            <text x="200" y="0" font-size="12" class="about-header-upper-text">From :</text>
-                            <text x="200" y="20" font-size="18" class="about-header-lower-text">India</text>
-                        </g>
-                    </g>
-
-                    <!--Skills -->
-                    <g transform="translate(0 188)" id="about-svg-skills">
-                        <!--Background-->
-                        <polyline id="about-skills-background" class="about-box-background"
-                            points="250,35 200,35 200,10 190,0 10,0 0,10 0,245 10,255 197,255 215,273 215,290 250,290 400,290 410,280 490,280 500,270 500,55 490,45 310,45 300,35" />
-
-                        <!--Lines-->
-                        <polyline class="about-box-line"
-                            points="250,35 200,35 200,10 190,0 10,0 0,10 0,245 10,255 197,255 215,273 215,290 250,290" />
-                        <polyline class="about-box-line"
-                            points="250,35 300,35 310,45 490,45 500,55 500,270 490,280 410,280 400,290 250,290" />
-
-                        <!--Header Mask-->
-                        <mask id="skills-header-mask">
-                            <polyline fill="white" points="0,37 0,10 10,0 190,0 200,10 200,37"></polyline>
-                            <rect fill="white" x="0" y="210" width="500" height="6"></rect>
-                        </mask>
-
-                        <!--Header Box-->
-                        <rect id="skills-header-rect" x="0" y="0" height="47" width="500" fill="#00b7ff" opacity=".15"
-                            mask="url(#skills-header-mask)">
-                        </rect>
-
-                        <!--Header Text-->
-                        <text x="71" y="25" class="about-header" font-size="18" font-weight="bold">SKILLS</text>
-
-                        <foreignObject x="0" y="60" width="506" height="340">
-                            <!--Skills Content-->
-                            <div id="about-skills-container" class="about-container">
-                                <!--Main Render Container-->
-                                <div id="about-skills-render-container"></div>
-                                <!--Others Render Container-->
-                                <div id="about-others-render-container"></div>
+                <div class="work-grid reveal-stagger">
+                    <article class="work-card reveal" data-tilt>
+                        <a class="work-cover" href="https://www.redbull.com/pk-en" target="_blank" rel="noreferrer noopener" style="background-image:url('images/projects/redbull.png')" aria-label="Open Red Bull"></a>
+                        <div class="work-meta">
+                            <span class="work-kind">Enterprise · MFE</span>
+                            <h3 class="work-title">Red Bull</h3>
+                            <p class="work-desc">Micro-frontend sales-enablement platform for Red Bull North America. Reusable React/MobX modules consumed across the RBNA web suite with strict performance and a11y budgets.</p>
+                            <div class="work-tags">
+                                <span class="tag tag-react">React</span>
+                                <span class="tag tag-ts">TypeScript</span>
+                                <span class="tag tag-mobx">MobX</span>
+                                <span class="tag tag-vite">Vite</span>
                             </div>
-                        </foreignObject>
-                    </g>
+                            <a class="work-link" href="https://www.redbull.com/pk-en" target="_blank" rel="noreferrer noopener">
+                                Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
 
-                    <!--About-->
-                    <g transform="translate(0 459)" id="about-svg-about">
+                    <article class="work-card reveal" data-tilt>
+                        <a class="work-cover" href="https://www.onlinecook.com/" target="_blank" rel="noreferrer noopener" style="background-image:url('images/projects/onlinecook.png')" aria-label="Open OnlineCook"></a>
+                        <div class="work-meta">
+                            <span class="work-kind">Recipe · Platform</span>
+                            <h3 class="work-title">OnlineCook</h3>
+                            <p class="work-desc">Recipe-centric food platform — Next.js storefront, NestJS API, Prisma + Postgres, plus a Python/Prefect recipe-import pipeline. Yarn-2 monorepo with Docker-based dev.</p>
+                            <div class="work-tags">
+                                <span class="tag tag-next">Next.js</span>
+                                <span class="tag tag-nest">NestJS</span>
+                                <span class="tag tag-prisma">Prisma</span>
+                                <span class="tag tag-docker">Docker</span>
+                            </div>
+                            <a class="work-link" href="https://www.onlinecook.com/" target="_blank" rel="noreferrer noopener">
+                                Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
 
-                        <!--Background-->
-                        <polyline id="about-about-background" class="about-box-background"
-                            points="250,35 200,35 200,10 190,0 10,0 0,10 0,35 0,315 10,325 100,325 110,335 250,335 490,335 500,325 500,55 490,45 410,45 400,35" />
-
-                        <!--Lines-->
-                        <polyline class="about-box-line"
-                            points="250,35 200,35 200,10 190,0 10,0 0,10 0,35 0,315 10,325 100,325 110,335 250,335" />
-                        <polyline class="about-box-line"
-                            points="250,35 400,35 410,45 490,45 500,55 500,325 490,335 250,335" />
-
-                        <!--Header Mask-->
-                        <mask id="about-header-mask">
-                            <polyline fill="white" points="0,37 0,10 10,0 190,0 200,10 200,37"></polyline>
-                            <rect fill="white" x="0" y="210" width="500" height="6"></rect>
-                        </mask>
-
-                        <!--Header Box-->
-                        <rect id="about-header-rect" x="0" y="0" height="47" width="500" fill="#00b7ff" opacity=".15"
-                            mask="url(#about-header-mask)">
-                        </rect>
-
-                        <!--Header Text-->
-                        <text x="73" y="25" class="about-header" font-size="18" font-weight="bold">ABOUT</text>
-
-                        <!--First Content-->
-                        <g transform="translate(10 65)">
-
-                            <use class="about-icon" href="#about-icon-background"></use>
-
-                            <mask id="about-pixel-mask-0">
-                                <rect class="about-pixel-mask-rect" x="6" y="7" height="20" width="64" fill="white" />
-                            </mask>
-                            <image mask="url(#about-pixel-mask-0)" class="about-pixel-image" height="64" width="64"
-                                href="/icons/baby-pixel.png" x="6" y="7" />
-
-                            <!--First Text-->
-                            <text x="88" y="33" class="about-text">I'm Creative Director and UI/UX Designer from morbi</text>
-                                 <text x="88" y="50" class="about-text">gujrat, working in web development and web designing.</text>
-                                 
-                        </g>
-
-                        <!--Second Content-->
-                        <g transform="translate(10 145)">
-
-                            <use class="about-icon" href="#about-icon-background" x="405"></use>
-
-                            <mask id="about-pixel-mask-1">
-                                <rect class="about-pixel-mask-rect" x="413" y="6" height="20" width="64" fill="white" />
-                            </mask>
-                            <image mask="url(#about-pixel-mask-1)" class="about-pixel-image" height="64" width="64"
-                                href="/icons/heart-pixel.png" x="413" y="6" />
-
-                            <!--Second Icon Render Container-->
-                            <g id="about-icon-1" transform="translate(417 5) scale(0.8)"> </g>
-
-                            <!--Second Text-->
-                            <text x="5" y="33" class="about-text">   I enjoy turning complex problems into simple, beautiful   </text>
-                            <text x="5" y="50" class="about-text">  and intuitive designs. </text>
-                            <!-- <text x="55" y="70" class="about-text"> platform and more...</text> -->
-                        </g>
-
-                        <!--Third Content-->
-                        <g transform="translate(10 225)">
-
-                            <use class="about-icon" href="#about-icon-background"></use>
-
-                            <!--Third Icon Render Container-->
-                            <g id="about-icon-2" transform="translate(5 5) scale(0.8)"> </g>
-
-
-                            <mask id="about-pixel-mask-2">
-                                <rect class="about-pixel-mask-rect" x="6" y="7" height="20" width="64" fill="white" />
-                            </mask>
-                            <image mask="url(#about-pixel-mask-2)" class="about-pixel-image" height="64" width="64"
-                                href="/icons/rocket-pixel.png" x="6" y="7" />
-
-                            <!--Third Text-->
-                            <text x="88" y="33" class="about-text">Now, after professional coaching, Yash is looking
-                                for</text>
-                            <text x="88" y="50" class="about-text">new challenges to work as a web & app developer</text>
-                        </g>
-                    </g>
-
-                    <!--Down Animation Lines-->
-                    <g transform="translate(145 76)">
-                        <polyline class="about-down-animation-line" points="0,0 110,0 120,10 325,10 333,18" />
-                    </g>
-                    <g transform="translate(195 192)">
-                        <polyline class="about-down-animation-line"
-                            points="0,0 8,0 13,5 13,22 110,22 120,32 275,32 283,40" />
-                    </g>
-                    <g transform="translate(403 496)">
-                        <polyline class="about-down-animation-line" points="0,0 70,0 78,8" />
-                    </g>
-
-                    <!--Up Animation Lines-->
-                    <g transform="translate(193 160)">
-                        <polyline class="about-up-animation-line" points="0,7 275,7 282,0" />
-                    </g>
-                    <g transform="translate(403 468)">
-                        <polyline class="about-up-animation-line" points="0,8 70,8 78,0" />
-                    </g>
-                    <g transform="translate(20 784)">
-                        <polyline class="about-up-animation-line" points="0,0 9,9 74,9 84,19 450,19 458,11" />
-                    </g>
-
-                </svg>
+                    <article class="work-card reveal" data-tilt>
+                        <a class="work-cover" href="https://toronto.rehousing.ca/" target="_blank" rel="noreferrer noopener" style="background-image:url('images/projects/rehousing.png')" aria-label="Open Rehousing"></a>
+                        <div class="work-meta">
+                            <span class="work-kind">Real Estate · SaaS</span>
+                            <h3 class="work-title">Rehousing</h3>
+                            <p class="work-desc">Toronto real-estate platform. NestJS API with Prisma, Redis &amp; Elasticsearch, paired with a typed React/Vite admin and tenant portal generated from an OpenAPI spec.</p>
+                            <div class="work-tags">
+                                <span class="tag tag-react">React</span>
+                                <span class="tag tag-nest">NestJS</span>
+                                <span class="tag tag-prisma">Prisma</span>
+                                <span class="tag tag-elastic">Elasticsearch</span>
+                            </div>
+                            <a class="work-link" href="https://toronto.rehousing.ca/" target="_blank" rel="noreferrer noopener">
+                                Visit live site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <div id="hover-icon-color-switch"></div>
-
-        <!--Work Container-->
-        <section id="work-section">
-            <div id="work-background"></div>
-
-            <div id="work-content" class="content-width column">
-                <div class="column" id="work-header-container">
-                    <div class="section-subheader-container">
-                        <hr>
-                        <h5>Portfolio</h5>
-                    </div>
-                    <h1 class="section-header-container">
-                        Some things
-                    </h1>
-                    <h1 class="section-header-container">
-                        I've worked on
-                    </h1>
+        <!-- ============= STACK ============= -->
+        <section id="stack" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow"><span class="eyebrow-bar"></span> Tooling</span>
+                    <h2 class="section-title">The stack I ship with</h2>
+                    <p class="section-lead">Two sides of the same engineer — application code and the systems that run it.</p>
                 </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="hide">
-                    <path id="code-path"
-                        d="M414.8 40.79L286.8 488.8C281.9 505.8 264.2 515.6 247.2 510.8C230.2 505.9 220.4 488.2 225.2 471.2L353.2 23.21C358.1 6.216 375.8-3.624 392.8 1.232C409.8 6.087 419.6 23.8 414.8 40.79H414.8zM518.6 121.4L630.6 233.4C643.1 245.9 643.1 266.1 630.6 278.6L518.6 390.6C506.1 403.1 485.9 403.1 473.4 390.6C460.9 378.1 460.9 357.9 473.4 345.4L562.7 256L473.4 166.6C460.9 154.1 460.9 133.9 473.4 121.4C485.9 108.9 506.1 108.9 518.6 121.4V121.4zM166.6 166.6L77.25 256L166.6 345.4C179.1 357.9 179.1 378.1 166.6 390.6C154.1 403.1 133.9 403.1 121.4 390.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4L121.4 121.4C133.9 108.9 154.1 108.9 166.6 121.4C179.1 133.9 179.1 154.1 166.6 166.6V166.6z" />
-                </svg>
-
-                <!--Render Container-->
-                <div id="work-render-container"></div>
-
-                <!--Navigation-->
-                <div id="work-navigation-container" class="row center">
-                    <div id="work-back-button" class="work-navigation-button work-disabled-navigation-button orange-hover">
-                        <svg viewBox="-512 0 512 512" xmlns="http://www.w3.org/2000/svg" height="28" width="28">
-                            <use fill="white" href="#arrow-path" style="transform: scaleX(-1)"></use>
-                        </svg>
+                <div class="stack-grid reveal-stagger">
+                    <div class="stack-col reveal">
+                        <div class="stack-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Fullstack engineering</h3>
+                        <p>Type-safe end-to-end. From design system to API to data layer — built to scale and easy to hand off.</p>
+                        <ul class="stack-list">
+                            <li>TypeScript · Node.js · Bun</li>
+                            <li>React · Next.js 14 · Vite · MobX</li>
+                            <li>React Native · Expo</li>
+                            <li>NestJS · Express · GraphQL</li>
+                            <li>Prisma · PostgreSQL · Redis · Elasticsearch</li>
+                            <li>Tailwind · Radix · shadcn/ui · Framer Motion</li>
+                            <li>Yarn / Turbo monorepos · Vitest · Cypress</li>
+                        </ul>
                     </div>
-                    <div id="work-next-button" class="work-navigation-button orange-hover">
-                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" height="28" width="28">
-                            <use fill="white" href="#arrow-path"></use>
-                        </svg>
+
+                    <div class="stack-col reveal">
+                        <div class="stack-icon alt"><i class="fa-solid fa-server"></i></div>
+                        <h3>Infrastructure &amp; DevOps</h3>
+                        <p>Linux fleets, virtualisation and cloud agents — patched, monitored and re-deployable on demand.</p>
+                        <ul class="stack-list">
+                            <li>Linux server patching &amp; major-version upgrades (RHEL · Ubuntu)</li>
+                            <li>vSphere &amp; ESXi virtualisation management</li>
+                            <li>Foreman + Puppet host lifecycle</li>
+                            <li>CloudBolt orchestration &amp; self-service catalog</li>
+                            <li>ELK Stack — Elasticsearch · Logstash · Kibana · Beats</li>
+                            <li>AWS — EC2, SSM, CloudWatch, agent upgrades at fleet scale</li>
+                            <li>Docker · Compose · Kubernetes basics · GitHub Actions</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Contact Container-->
-        <section id="contact-section" class="content-width column">
-            <div class="column" id="contact-header-container">
-                <div class="section-subheader-container">
-                    <hr>
-                    <h5>Say hello 👋</h5>
+        <!-- ============= INFRASTRUCTURE ============= -->
+        <section id="infra" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow"><span class="eyebrow-bar"></span> Infrastructure &amp; DevOps</span>
+                    <h2 class="section-title">Production work behind<br>the production work</h2>
+                    <p class="section-lead">
+                        I don't just ship application code — I keep the systems it runs on healthy. Below is the kind of infrastructure work I've owned end-to-end.
+                    </p>
                 </div>
-                <h1 class="section-header-container">
-                    Contact me
-                </h1>
-            </div>
 
-            <div id="contact-container">
-                <!--Form Container-->
-                <div id="contact-form-container" class="column contact-container">
-                    <div id="contact-name-input" class="input-container column">
-                        <div class="row">
-                            <label for="contact-name-input-field">Name :</label>
-                            <span class="error-label hide">Please enter your name.</span>
+                <div class="infra-grid reveal-stagger">
+                    <article class="infra-card reveal">
+                        <div class="infra-icon"><i class="fa-brands fa-linux"></i></div>
+                        <h4>Linux server patching &amp; upgrades</h4>
+                        <p>Owned monthly patch cycles across a fleet of RHEL/Ubuntu hosts. Built rolling, blast-radius-aware upgrade runbooks that move workloads through dev → staging → prod with zero customer-facing downtime, including major-version OS upgrades.</p>
+                        <div class="infra-stats">
+                            <span><strong>140+</strong> hosts</span>
+                            <span><strong>24/7</strong> on-call</span>
+                            <span><strong>99.9%</strong> uptime</span>
                         </div>
-                        <input id="contact-name-input-field" tabindex="-1">
-                    </div>
-                    <div id="contact-email-input" class="input-container column">
-                        <div class="row">
-                            <label for="contact-email-input-field">Email :</label>
-                            <span class="error-label hide">Please enter a valid email address.</span>
+                    </article>
+
+                    <article class="infra-card reveal">
+                        <div class="infra-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h4>ELK Stack — observability</h4>
+                        <p>Designed Elasticsearch / Logstash / Kibana pipelines to ingest logs &amp; metrics from app, OS and network layers. Built Kibana dashboards used by oncall to triage incidents and capacity-plan upgrades.</p>
+                        <div class="infra-stats">
+                            <span><strong>Beats</strong> agents</span>
+                            <span><strong>Custom</strong> dashboards</span>
+                            <span><strong>Retention</strong> tuned</span>
                         </div>
-                        <input id="contact-email-input-field" type="email" tabindex="-1">
-                    </div>
-                    <div id="contact-message-input" class="input-container column">
-                        <div class="row">
-                            <label for="contact-message-input-field">Message :</label>
-                            <span class="error-label hide">Please enter your message.</span>
+                    </article>
+
+                    <article class="infra-card reveal">
+                        <div class="infra-icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+                        <h4>CloudBolt orchestration</h4>
+                        <p>Maintained CloudBolt as the self-service portal for VM provisioning &amp; lifecycle. Wrote blueprints and resource handlers so app teams could spin up compliant environments without touching vSphere directly.</p>
+                        <div class="infra-stats">
+                            <span><strong>Self-service</strong> catalog</span>
+                            <span><strong>Policy-driven</strong></span>
+                            <span><strong>Audited</strong> changes</span>
                         </div>
-                        <textarea id="contact-message-input-field" tabindex="-1"></textarea>
+                    </article>
+
+                    <article class="infra-card reveal">
+                        <div class="infra-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h4>Foreman + Puppet</h4>
+                        <p>Used Foreman as the source of truth for host configuration, paired with Puppet classes to enforce baseline state. Smart-proxy-driven reboots, OS hardening &amp; agent rollouts.</p>
+                        <div class="infra-stats">
+                            <span><strong>Smart proxies</strong></span>
+                            <span><strong>Host groups</strong></span>
+                            <span><strong>Drift-free</strong></span>
+                        </div>
+                    </article>
+
+                    <article class="infra-card reveal">
+                        <div class="infra-icon"><i class="fa-solid fa-server"></i></div>
+                        <h4>vSphere virtualisation</h4>
+                        <p>Day-to-day operation of vSphere clusters — VM provisioning, snapshot &amp; storage policies, vMotion-aware patching. Coordinated maintenance windows with app owners.</p>
+                        <div class="infra-stats">
+                            <span><strong>Clusters</strong></span>
+                            <span><strong>Snapshots</strong></span>
+                            <span><strong>vMotion</strong></span>
+                        </div>
+                    </article>
+
+                    <article class="infra-card reveal">
+                        <div class="infra-icon"><i class="fa-brands fa-aws"></i></div>
+                        <h4>AWS agent upgrades at scale</h4>
+                        <p>Used AWS Systems Manager (SSM) to roll out and upgrade agents — SSM, CloudWatch, ELK Beats — across EC2 fleets. Wrote SSM documents &amp; State Manager associations so upgrades become declarative and idempotent.</p>
+                        <div class="infra-stats">
+                            <span><strong>SSM</strong> docs</span>
+                            <span><strong>State Manager</strong></span>
+                            <span><strong>Idempotent</strong></span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= GITHUB ACTIVITY ============= -->
+        <section id="activity" class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow"><span class="eyebrow-bar"></span> GitHub activity</span>
+                    <h2 class="section-title">3,000+ commits<br>and counting</h2>
+                    <p class="section-lead">
+                        A quick look at the last 12 months on
+                        <a class="link" href="https://github.com/abdullahnadeem-dev" target="_blank" rel="noreferrer noopener">github.com/abdullahnadeem-dev</a>.
+                        Most of the work lives in private client repos &mdash; the rhythm is the same.
+                    </p>
+                </div>
+
+                <div class="activity-card reveal">
+                    <div class="activity-head">
+                        <div class="activity-id">
+                            <div class="activity-avatar"><i class="fa-brands fa-github"></i></div>
+                            <div>
+                                <div class="activity-handle">@abdullahnadeem-dev</div>
+                                <div class="activity-sub">Fullstack &amp; DevOps · daily commit rhythm</div>
+                            </div>
+                        </div>
+                        <a class="btn btn-ghost activity-cta" href="https://github.com/abdullahnadeem-dev" target="_blank" rel="noreferrer noopener">
+                            <i class="fa-brands fa-github"></i> View profile
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
-                    <div class="row" id="contact-button-container">
-                        <!--Menu Social Link-->
-                        <div id="menu-social-container" class="row">
-                            <!-- <a tabindex="-1" target="_blank" href="https://discord.gg/P9QvEeAm"><img class="social-icon"
-                                    src="./images/discord.png" alt="discord Menu Icon" height="28" width="28"></img></a> -->
-                            <a tabindex="-1" target="_blank" href="https://github.com/yashchauhan008">
-                                <i class="fab fa-github social-icon"></i>
-                            </a>
-                            
-                            <a tabindex="-1" href="mailto:yashchauhan1775@gmail.com">
-                                <i class="fas fa-envelope social-icon"></i>
-                            </a>
-                            
-                            <a tabindex="-1" target="_blank" href="https://www.instagram.com/yash_chauhan________">
-                                <i class="fab fa-instagram social-icon"></i>
-                            </a>
-                            
-                            <a tabindex="-1" target="_blank" href="https://www.linkedin.com/in/yash-chauhan-842162321">
-                                <i class="fab fa-linkedin social-icon"></i>
-                            </a>
-                            
-                            <!--Submit Button-->
-                            <div id="contact-submit-button" class="small-button orange-hover">
-                                Submit
+
+                    <div class="activity-stats">
+                        <div class="activity-stat"><strong data-count="3049" data-format="comma">3,049</strong><span>Contributions · last year</span></div>
+                        <div class="activity-stat"><strong>Daily</strong><span>Mon &mdash; Fri rhythm</span></div>
+                        <div class="activity-stat"><strong>Private</strong><span>Most work in client repos</span></div>
+                    </div>
+
+                    <div class="contrib-graph">
+                        <div class="heatmap-months" aria-hidden="true">
+                            <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
+                        </div>
+                        <div class="heatmap-body">
+                            <div class="heatmap-days" aria-hidden="true">
+                                <span>Mon</span><span>Wed</span><span>Fri</span>
+                            </div>
+                            <div class="heatmap-grid" role="img" aria-label="GitHub contribution heatmap — 3,049 contributions in the last year"></div>
+                        </div>
+                        <div class="contrib-legend">
+                            <span>Less</span>
+                            <span class="sq sq-0"></span>
+                            <span class="sq sq-1"></span>
+                            <span class="sq sq-2"></span>
+                            <span class="sq sq-3"></span>
+                            <span class="sq sq-4"></span>
+                            <span>More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============= ABOUT ============= -->
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-left reveal">
+                        <span class="eyebrow"><span class="eyebrow-bar"></span> About</span>
+                        <h2 class="section-title">Two things in one engineer</h2>
+                        <p>
+                            I'm Abdullah — a fullstack developer who is just as comfortable in a NestJS service or a React Native screen as I am SSH'd into a Linux box at 2am, walking a patch through prod.
+                        </p>
+                        <p>
+                            That mix is the thing. I've shipped product code for <strong>Red Bull</strong>, <strong>OnlineCook</strong> and <strong>Rehousing</strong>, while owning the infrastructure those products depend on — Linux servers, vSphere, Foreman, ELK, CloudBolt and AWS.
+                        </p>
+                        <p>
+                            I care about quality, but I care more about <em>shipping</em>. Production wins.
+                        </p>
+
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">Let's work together <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="mailto:abdullahnadeem9380@gmail.com" class="btn btn-ghost">abdullahnadeem9380@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="about-right reveal">
+                        <div class="about-card">
+                            <div class="about-card-row">
+                                <span class="lbl">Name</span>
+                                <span class="val">Abdullah</span>
+                            </div>
+                            <div class="about-card-row">
+                                <span class="lbl">Role</span>
+                                <span class="val">Fullstack Dev &amp; DevOps</span>
+                            </div>
+                            <div class="about-card-row">
+                                <span class="lbl">Stack</span>
+                                <span class="val">TypeScript · Node · Linux</span>
+                            </div>
+                            <div class="about-card-row">
+                                <span class="lbl">Working</span>
+                                <span class="val"><span class="status-dot inline"></span> Remote, async-friendly</span>
+                            </div>
+                            <div class="about-card-row">
+                                <span class="lbl">Email</span>
+                                <span class="val">abdullahnadeem9380@gmail.com</span>
+                            </div>
+                            <hr>
+                            <div class="about-card-tags">
+                                <span class="chip">Production-minded</span>
+                                <span class="chip">DX-obsessed</span>
+                                <span class="chip">Patches at 2am</span>
+                                <span class="chip">Type-safe</span>
+                                <span class="chip">Long-term thinking</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!--Loading Container-->
-                <div id="contact-loading-container" class="center contact-container hide">
-                    <h4>Delivering...</h4>
-                </div>
-
-                <!--Result Container-->
-                <div id="contact-result-container" class="contact-container column center hide">
-                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                        <polyline id="contact-success-line" class="hide" stroke="#A1CC4D" points="10,70 40,100 115,20">
-                        </polyline>
-                        <line stroke="rgb(216, 84, 84)" class="contact-error-line" x1="5" y1="5" x2="115" y2="115">
-                        </line>
-                        <line stroke="rgb(216, 84, 84)" class="contact-error-line" x1="115" y1="5" x2="5" y2="115">
-                        </line>
-                    </svg>
-                    <div id="contact-result-message-container" class="center column">
-
-                    </div>
-                    <div class="small-button orange-hover" id="contact-result-button"></div>
-                </div>
-
             </div>
         </section>
 
-        <footer class="row center">
-            <span>&copy; Yash chauhan</span>
+        <!-- ============= CONTACT ============= -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <div class="contact-text">
+                        <span class="eyebrow"><span class="eyebrow-bar"></span> Say hello</span>
+                        <h2 class="section-title">Got a product to ship<br>or a fleet to keep alive?</h2>
+                        <p>
+                            Drop a line — I read everything. Fastest way is email; I usually reply within a day.
+                        </p>
 
-            <!--Legal Container-->
-            <div id="legal-container" class="row">
-               
-                   
+                        <div class="contact-actions">
+                            <a href="mailto:abdullahnadeem9380@gmail.com" class="btn btn-primary btn-lg">
+                                <i class="fa-solid fa-paper-plane"></i> abdullahnadeem9380@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="contact-socials">
+                            <a href="https://github.com/abdullahnadeem-dev" target="_blank" rel="noreferrer noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/abdullah-nadeem-a0029b211/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:abdullahnadeem9380@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year"></span> Abdullah — Fullstack &amp; DevOps</span>
+            <span class="footer-mono">crafted in vim · shipped via git push</span>
+        </div>
+    </footer>
 </body>
 
 </html>
