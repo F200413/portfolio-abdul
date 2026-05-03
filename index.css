@@ -346,23 +346,38 @@ button {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 80%;
-        max-width: 320px;
-        background: rgba(7,9,15,0.95);
-        backdrop-filter: blur(20px);
+        width: 100%;
+        max-width: none;
+        background: rgba(7,9,15,0.97);
+        -webkit-backdrop-filter: saturate(140%) blur(24px);
+                backdrop-filter: saturate(140%) blur(24px);
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
-        padding: 40px 28px;
+        padding: 80px 28px 40px;
         gap: 14px;
         transform: translateX(100%);
         transition: transform 0.35s cubic-bezier(0.7, 0, 0.3, 1);
-        border-left: 1px solid var(--line);
+        border-left: none;
+        z-index: 60;
     }
     .nav.open { transform: translateX(0); }
-    .nav a { padding: 14px 18px; font-size: 1.1rem; }
-    .nav-cta { text-align: center; margin-top: 8px; }
-    .nav-toggle { display: flex; }
+    .nav a { padding: 14px 18px; font-size: 1.15rem; text-align: center; }
+    .nav-cta { text-align: center; margin-top: 8px; align-self: center; min-width: 60%; justify-content: center; }
+    .nav-toggle { display: flex; z-index: 70; position: relative; }
+    /* Theme toggle stays above the drawer too */
+    .theme-toggle { z-index: 70; position: relative; }
+    /* Lock body scroll when nav is open */
+    body.nav-open { overflow: hidden; }
+    /* Drop the header's backdrop-filter while the drawer is open — it
+       creates a containing block that traps the position:fixed drawer */
+    body.nav-open .site-header,
+    body.nav-open .site-header.scrolled {
+        background: transparent !important;
+        -webkit-backdrop-filter: none !important;
+                backdrop-filter: none !important;
+        border-color: transparent !important;
+    }
 }
 
 /* ============= Hero ============= */
@@ -1329,7 +1344,7 @@ body.theme-light .term-statbar { border-bottom-color: rgba(255,255,255,0.06); }
 
 .heatmap-months {
     display: grid;
-    grid-template-columns: 28px repeat(12, 1fr);
+    grid-template-columns: 30px repeat(12, 1fr);
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.72rem;
     color: var(--dim);
@@ -1337,6 +1352,7 @@ body.theme-light .term-statbar { border-bottom-color: rgba(255,255,255,0.06); }
 }
 .heatmap-months span {
     grid-column: span 1;
+    padding-left: 2px;
 }
 .heatmap-months span:first-child {
     grid-column: 2;
@@ -2011,6 +2027,186 @@ body.theme-light .link:hover { color: #0F172A; border-bottom-color: #0F172A; }
 .reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.29s }
 .reveal-stagger > .reveal:nth-child(5) { transition-delay: 0.37s }
 .reveal-stagger > .reveal:nth-child(6) { transition-delay: 0.45s }
+
+/* ===================================================
+   MOBILE FIXES — consolidated overrides for phones
+   =================================================== */
+
+/* Tablet & small laptop tightening */
+@media (max-width: 880px) {
+    .section { padding: 90px 0; }
+    .section-header { margin-bottom: 48px; }
+    .container { padding: 0 22px; }
+    .hero { padding: 130px 0 70px; }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    /* Layout breathing */
+    .container { padding: 0 18px; }
+    .section { padding: 72px 0; }
+    .section-header { margin-bottom: 36px; }
+    .section-title { font-size: clamp(1.7rem, 7vw, 2.3rem); line-height: 1.15; }
+    .section-lead { font-size: 0.95rem; }
+
+    /* Header */
+    .site-header { padding: 14px 0; }
+    .site-header.scrolled { padding: 10px 0; }
+    .brand { font-size: 0.92rem; gap: 8px; }
+    .brand-bracket { padding: 3px 6px; font-size: 0.78rem; }
+    .theme-toggle {
+        width: 36px; height: 36px;
+        font-size: 0.9rem;
+    }
+    .nav-toggle { padding: 6px; }
+    .nav-toggle span { width: 22px; }
+
+    /* Hero */
+    .hero { padding: 100px 0 50px; }
+    .hero-title {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+    .status-pill { font-size: 0.75rem; padding: 6px 12px; margin-bottom: 22px; }
+    .hero-sub { font-size: 0.96rem; line-height: 1.6; margin-bottom: 28px; }
+
+    /* Hero CTAs — full-width stacked feels tappable on phones */
+    .hero-cta { flex-direction: column; align-items: stretch; gap: 12px; margin-bottom: 36px; }
+    .btn { justify-content: center; padding: 14px 22px; font-size: 0.95rem; }
+    .hero-cta .btn { width: 100%; }
+
+    /* Hero stats — drop dividers, use a compact 3-up grid */
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        padding-top: 22px;
+    }
+    .hero-stats .stat-divider { display: none; }
+    .stat strong { font-size: 1.25rem; }
+    .stat span { font-size: 0.74rem; line-height: 1.3; }
+
+    /* Marquee */
+    .marquee { padding: 16px 0; }
+    .marquee-track > span { font-size: 1.05rem; }
+    .marquee-track { gap: 16px; }
+
+    /* Selection-spy nav active dot is tiny on phones; tighten */
+    .nav a.active:not(.nav-cta)::before { width: 5px; height: 5px; margin-right: 6px; }
+
+    /* Work grid */
+    .work-grid { gap: 18px; }
+    .work-card { border-radius: 18px; }
+    .work-cover { height: 180px; }
+    .work-meta { padding: 20px 18px 22px; gap: 10px; }
+    .work-title { font-size: 1.3rem; }
+    .work-desc { font-size: 0.88rem; }
+    .work-kind { font-size: 0.66rem; }
+    .work-tags { gap: 5px; }
+    .tag { font-size: 0.68rem; padding: 3px 8px; }
+
+    /* Stack columns */
+    .stack-col { padding: 28px 22px; border-radius: 18px; }
+    .stack-icon { width: 48px; height: 48px; font-size: 1.1rem; margin-bottom: 16px; }
+    .stack-col h3 { font-size: 1.25rem; }
+    .stack-col > p { font-size: 0.9rem; margin-bottom: 18px; }
+    .stack-list li { font-size: 0.86rem; padding-left: 18px; }
+
+    /* Infrastructure cards */
+    .infra-card { padding: 22px 20px; border-radius: 18px; }
+    .infra-card h4 { font-size: 1.05rem; }
+    .infra-card p { font-size: 0.86rem; }
+    .infra-stats { gap: 10px; padding-top: 12px; }
+    .infra-stats span { font-size: 0.72rem; }
+
+    /* Activity / heatmap */
+    .activity-card { padding: 22px 18px; border-radius: 20px; }
+    .activity-head { gap: 12px; margin-bottom: 22px; flex-direction: column; align-items: flex-start; }
+    .activity-id { gap: 12px; }
+    .activity-avatar { width: 44px; height: 44px; font-size: 1.1rem; border-radius: 11px; }
+    .activity-handle { font-size: 0.92rem; }
+    .activity-sub { font-size: 0.78rem; }
+    .activity-cta { width: 100%; justify-content: center; }
+    .activity-stats { grid-template-columns: 1fr; gap: 10px; margin-bottom: 22px; }
+    .activity-stat { padding: 14px 16px; }
+    .activity-stat strong { font-size: 1.3rem; }
+
+    .contrib-graph { padding: 16px 14px 12px; }
+    .heatmap-months {
+        grid-template-columns: 20px repeat(12, 1fr);
+        font-size: 0.55rem;
+        margin-bottom: 6px;
+    }
+    .heatmap-body { gap: 6px; }
+    .heatmap-days {
+        width: 14px;
+        font-size: 0.55rem;
+        padding: 6px 0;
+    }
+    .heatmap-grid { gap: 2px; min-height: 80px; }
+    .hm-cell:hover { transform: scale(1.4); }
+    .contrib-legend { font-size: 0.6rem; gap: 3px; margin-top: 8px; }
+    .contrib-legend .sq { width: 10px; height: 10px; }
+
+    /* About */
+    .about-grid { gap: 32px; }
+    .about-left p { font-size: 0.95rem; line-height: 1.7; }
+    .about-card { padding: 24px 20px; border-radius: 20px; }
+    .about-card-row { padding: 10px 0; font-size: 0.86rem; }
+    .about-card-row .lbl { font-size: 0.7rem; }
+    .about-cta { flex-direction: column; align-items: stretch; gap: 10px; }
+    .about-cta .btn { width: 100%; justify-content: center; }
+
+    /* Contact */
+    .contact-card { padding: 38px 20px; border-radius: 22px; }
+    .contact-text p { font-size: 0.95rem; }
+    .btn-lg { padding: 14px 22px; font-size: 0.92rem; }
+    .contact-actions .btn { width: 100%; justify-content: center; }
+
+    /* Footer */
+    .site-footer { padding: 24px 0 30px; }
+    .footer-inner { font-size: 0.78rem; gap: 8px; justify-content: center; text-align: center; }
+    .footer-mono { font-size: 0.7rem; }
+
+    /* Eyebrow */
+    .eyebrow { font-size: 0.7rem; margin-bottom: 14px; }
+
+    /* Reduce decorative blur cost on phones */
+    .bg-glow { width: 380px; height: 380px; filter: blur(80px); opacity: 0.25; }
+    .bg-glow-1 { left: -150px; }
+    .bg-glow-2 { right: -150px; }
+
+    /* Scroll progress thinner */
+    #scroll-progress { height: 2px; }
+}
+
+/* Tiny phones */
+@media (max-width: 380px) {
+    .container { padding: 0 14px; }
+    .hero { padding: 92px 0 44px; }
+    .hero-title { font-size: clamp(1.7rem, 9.5vw, 2.3rem); }
+    .hero-sub { font-size: 0.9rem; }
+
+    .stat strong { font-size: 1.05rem; }
+    .stat span { font-size: 0.68rem; }
+    .hero-stats { gap: 8px; }
+
+    .marquee-track > span { font-size: 0.95rem; }
+
+    .section-title { font-size: clamp(1.55rem, 8vw, 2rem); }
+
+    .about-card-tags { gap: 5px; }
+    .chip { font-size: 0.7rem; padding: 3px 8px; }
+
+    /* Brand wordmark gets very tight — drop the ".dev" tld */
+    .brand-dot, .brand-tld { display: none; }
+}
+
+/* Disable cursor-spotlight on touch devices to avoid lingering effect */
+@media (hover: none) {
+    .card-spotlight { display: none !important; }
+}
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {

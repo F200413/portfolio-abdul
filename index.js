@@ -74,16 +74,19 @@
     const toggle = document.getElementById('nav-toggle');
     const nav = document.querySelector('.nav');
     if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-            const open = nav.classList.toggle('open');
+        const setOpen = (open) => {
+            nav.classList.toggle('open', open);
             toggle.classList.toggle('open', open);
+            document.body.classList.toggle('nav-open', open);
             toggle.setAttribute('aria-expanded', String(open));
-        });
+        };
+        toggle.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
         nav.querySelectorAll('a').forEach(a => {
-            a.addEventListener('click', () => {
-                nav.classList.remove('open');
-                toggle.classList.remove('open');
-            });
+            a.addEventListener('click', () => setOpen(false));
+        });
+        // Close on Escape
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && nav.classList.contains('open')) setOpen(false);
         });
     }
 
